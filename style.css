@@ -17,17 +17,26 @@ body {
     color: #333;
 }
 
-.text_text{
+.text_row{
     display: flex;
     flex-direction: row;
 }
 
-.text_text nav{
+.text_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_row .text_column{
+    padding-right: 5%;
+}
+
+.text_row nav{
     display: flex;
     width: 85%;
     justify-content: right;
 }
-.text_text h2{
+.text_row h2{
     margin-top: 3px;
 }
 
@@ -143,6 +152,24 @@ section h2 {
     display: inline-block;
     padding-bottom: 5px;
 }
+.showcase {
+    margin-bottom: 1.5rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    padding: 1rem; /* Add padding inside the project container */
+    border-radius: 20px; /* Round the corners of the project container */
+    justify-content: center;
+}
+
+.showcase img {
+    display: block;
+    margin: 1rem 2rem;
+    width: auto;
+    max-width: 40%;
+    height: auto;
+    border-radius: 12px;
+}
 
 .project {
     margin-bottom: 1.5rem;
@@ -151,6 +178,7 @@ section h2 {
     transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
     padding: 1rem; /* Add padding inside the project container */
     border-radius: 20px; /* Round the corners of the project container */
+    justify-content: center;
 }
 
 .project:hover {
@@ -161,14 +189,21 @@ section h2 {
 .project h3 {
     font-size: 1.5em;
     margin-bottom: 0.5rem;
+    
+}
+
+.project:hover h3 {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
 }
 
 .project img {
     display: block;
     margin: 1rem 2rem;
     width: auto;
-    max-width: 50%;
+    max-width: 40%;
     height: auto;
+    border-radius: 12px;
 }
 .project-content {
     display: flex;
@@ -300,12 +335,38 @@ footer {
         flex-direction: column;
     }
 
+    .project img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
     .project {
         flex-direction: column;
         padding: 0.5rem;
     }
 
     .project h3 {
+        font-size: 1.2em;
+        
+    }
+
+    .showcase img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .showcase {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .showcase h3 {
         font-size: 1.2em;
     }
 
@@ -333,6 +394,14 @@ footer {
     }
 
     .project img {
+        max-width: 100%;
+    }
+
+    .showcase h3 {
+        font-size: 1.1em;
+    }
+
+    .showcase img {
         max-width: 100%;
     }
 
