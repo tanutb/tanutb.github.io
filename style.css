@@ -372,7 +372,7 @@ footer {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 45%;
+        max-width: 70%;
         height: auto;
         
     }
@@ -391,7 +391,7 @@ footer {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 45%;
+        max-width: 70%;
         height: auto;
     }
 
@@ -420,27 +420,27 @@ footer {
     }
 
     .image_name_normally {
-        font-size: 1.3em;
+        font-size: 1.0em;
     }
 
     section h2 {
-        font-size: 1.3em;
+        font-size: 1.0em;
     }
 
     .project h3 {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
     .project img {
-        max-width: 40%;
+        max-width: 50%;
     }
 
     .showcase h3 {
-        font-size: 1.1em;
+        font-size: 1.0em;
     }
 
     .showcase img {
-        max-width: 40%;
+        max-width: 50%;
     }
 
     .container {
