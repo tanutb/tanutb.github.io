@@ -319,7 +319,21 @@ footer {
         padding: 20px;
     }
     .image_name_normally {
-        font-size: 1.3em;
+        font-size: 1.0em;
+    }
+
+    .button_frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image_name img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        border-radius: 50%; /* Make the image circular */
     }
 
     .container {
@@ -350,12 +364,17 @@ footer {
         flex-direction: column;
     }
 
+    .project-content img{
+        justify-content: center;
+    }
+
     .project img {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 60%;
+        max-width: 45%;
         height: auto;
+        
     }
 
     .project {
@@ -364,7 +383,7 @@ footer {
     }
 
     .project h3 {
-        font-size: 1.2em;
+        font-size: 1 em;
         
     }
 
@@ -372,7 +391,7 @@ footer {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 50%;
+        max-width: 45%;
         height: auto;
     }
 
@@ -413,7 +432,7 @@ footer {
     }
 
     .project img {
-        max-width: 60%;
+        max-width: 40%;
     }
 
     .showcase h3 {
@@ -421,7 +440,7 @@ footer {
     }
 
     .showcase img {
-        max-width: 60%;
+        max-width: 40%;
     }
 
     .container {
