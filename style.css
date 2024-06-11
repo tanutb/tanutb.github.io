@@ -55,7 +55,7 @@ body {
 
 .text_area {
     margin-top: 10px ;
-    width: 95%;
+    width: auto;
     line-height: 1.7;
 }
 
@@ -63,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 5%;
+    width: auto;
 }
 
 .image_name_normally h1{
@@ -318,6 +319,24 @@ footer {
         justify-content: flex-start;
         padding: 20px;
     }
+
+    .image_name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: center;
+        margin: 0 auto; /* Center the div horizontally */
+    }
+
+    .image_name h1{
+        font-size: 1.1 em;
+    }
+
+    .image_name .text_area{
+        font-size: 1.1 em;
+    }
+
     .image_name_normally {
         font-size: 1.0em;
     }
@@ -439,9 +458,6 @@ footer {
         font-size: 1.0em;
     }
 
-    .showcase img {
-        max-width: 50%;
-    }
 
     .container {
         padding: 10px;
