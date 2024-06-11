@@ -156,9 +156,9 @@ section h2 {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    padding: 1rem; /* Add padding inside the project container */
     border-radius: 20px; /* Round the corners of the project container */
     justify-content: center;
+    padding: 2%;
 }
 
 .showcase img {
@@ -170,14 +170,20 @@ section h2 {
     border-radius: 12px;
 }
 
+.showcase h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.7rem;
+    
+}
+
 .project {
     margin-bottom: 1.5rem;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    padding: 1rem; /* Add padding inside the project container */
     border-radius: 20px; /* Round the corners of the project container */
     justify-content: center;
+    padding: 2%;
 }
 
 .project:hover {
@@ -186,7 +192,7 @@ section h2 {
 }
 
 .project h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 0.5rem;
     
 }
@@ -335,10 +341,12 @@ footer {
 
     .image_name .text_area{
         font-size: 1.1 em;
+        text-align: center;
     }
 
-    .image_name_normally {
-        font-size: 1.0em;
+    .image_name .image_name_normally h1 {
+        font-size: 2.0em;
+        text-align: center;
     }
 
     .button_frame {
@@ -395,11 +403,11 @@ footer {
 
     .project {
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 5%;
     }
 
     .project h3 {
-        font-size: 1 em;
+        font-size: 1.2em;
         
     }
 
@@ -413,7 +421,8 @@ footer {
 
     .showcase {
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 5%;
+        font-size: 1.0em;
     }
 
     .showcase h3 {
@@ -440,15 +449,15 @@ footer {
     }
 
     section h2 {
-        font-size: 1.0em;
+        font-size: 1.1em;
     }
 
     .project h3 {
-        font-size: 1.0em;
+        font-size: 1.2em;
     }
 
     .showcase h3 {
-        font-size: 1.0em;
+        font-size: 1.2em;
     }
 
 
