@@ -368,11 +368,8 @@ footer {
 
     .text_row nav{
         display: flex;
-        width: 85%;
+        width: auto;
         justify-content: center;
-    }
-    .text_row h2{
-        padding-right: 10%;
     }
 
     .image_name {
@@ -391,7 +388,7 @@ footer {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 70%;
+        max-width: 80%;
         height: auto;
         
     }
@@ -410,7 +407,7 @@ footer {
         display: block;
         margin: 1rem 2rem;
         width: auto;
-        max-width: 70%;
+        max-width: 80%;
         height: auto;
     }
 
@@ -448,10 +445,6 @@ footer {
 
     .project h3 {
         font-size: 1.0em;
-    }
-
-    .project img {
-        max-width: 50%;
     }
 
     .showcase h3 {
