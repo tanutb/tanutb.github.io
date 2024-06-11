@@ -1,7 +1,168 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio TanutB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>testest</h1>
-<p>Testsets</p>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="image_name">
+            
+            <img src="./img/tanutb.jpg" alt="Project Image1">
+            <div class="image_name_normally">
+                <h1>Tanut Bumrungvongsiri</h1>
+                <div class="text_area">
+                Fresh graduate with 6-month AI internship experience, 
+                adept in machine learning and deep learning through academic projects, 
+                eager to tackle new challenges and continuously improve AI skills.
+                </div>
+            </div>
+        </div>
+
+
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                <div class="project">
+                    <h3>Bachelor's in Robotics and Automation Engineering</h3>
+                    <p>King Mongkut's University of Technology Thonburi (July 2020 - May 2024)</p>
+                    <ul class="project-description">
+                    <li>
+                    <p><b>GPAX  : </b> 3.74 / 4.00</p>
+                    </li>
+                    <li>
+                        <p><b>Relevant Coursework  : </b> 
+                            Artificial intelligence, Machine Learning, Pattern Recognition, Natural language processing, Reinforcement Learning, 
+                            Image processing, Calculus, Statistic & Probability. 
+                             
+                        </p>
+                    </li></ul>
+                    
+                    
+                </div>
+                <!-- Add more projects as needed -->
+            </section>
+            <section id="Work">
+                <h2>Work experience</h2>
+                <div class="project">
+                    <h3>AI Engineer Intern & Software developer at The Bangkok Unitrade Co., Ltd.</h3>
+                    <p>June 2023 - november 2023 (6 month)</p><br>
+                    <p><b>AI Engineer</b></p>
+                    <ul class="project-description">
+                    <li>
+                        Adapted object detection for surgical instruments moving along a conveyor belt for classification, 
+                        employing YOLOv8
+                    </li>
+                    <li>Conducted research and applied a multi-view classification model to 
+                        fine graind classify surgical instruments achieving 99.4% accuracy on 44 
+                        surgical instrument classes. 
+                    </li>
+                    </ul>  
+                    <p><b>Software developer</b></p>
+                    <ul class="project-description">
+                    <li>
+                        Developed a software application with a PyQt5 graphical user interface (GUI) 
+                        for integrating a AI for object detection and classification. 
+                    </li>
+                    <li>Implemented logging functionality to record prediction in a MySQL database.
+                    </li>
+                    </ul>  
+                </div>
+                <!-- Add more projects as needed -->
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <a href="./page/project1.html" class="project-link">
+                    <div class="project">
+                        <h3>Deep Learning-based Navigation for Mobile Robots in Dynamic Environments</h3>
+                        <p>May 2024</p>
+                        <div class="project-content">
+                            <img src="./img/Reinfo.png" alt="Project Image1">
+                            <div class="project-text">
+                                <br>
+                                <ul class="project-description">
+                                    <li>Utilized mathematics to group LiDAR clusters and track obstacles in each frame 
+                                    </li>
+                                    <li>Adapted TD3 and SAC deep reinforcement learning algorithms for 
+                                        mobile robot navigation.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="project">
+                    <h3>Solve TicTacToe games using a Reinforcement Learning algorithm.</h3>
+                    <p>April 2024</p>
+                    <div class="project-content">
+                        <img src="./img/Reinfo_XO.png" alt="Project Image2">
+                        <div class="project-text">
+                            <br>
+                            <ul class="project-description">
+                                <li>Applied Q-learning, SARSA, and Double Q-learning.to train an agent to play Tic-Tac-Toe</li>
+                                <li>Compared the performance of result of Q-learning, SARSA, and Double Q-learning algorithms </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Image Classification of Surgical Instruments</h3>
+                    <p>March 2023</p>
+                    <div class="project-content">
+                        <img src="./img/Sur_classi.png" alt="Project Image3">
+                        <div class="project-text">
+                            <br>
+                            <ul class="project-description">
+                                <li>Using fine-tuned ResNet-50 and VGG-16 models pre-trained on ImageNet.</li>
+                                <li>Enhancing the model's capability to focus on relevant features with SEResNet50</li>
+                                <li>Adapted fine-grained classification, WSDAN and Bilinear Pooling</li>
+                                <li>Compare and Analyze the result</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Telemanipulation of Robot Hand using Human Gesture</h3>
+                    <p>November 2022</p>
+                    <div class="project-content">
+                        <img src="./img/Tele_human.jpg" alt="Project Image4">
+                        <div class="project-text">
+                            <br>
+                            <ul class="project-description">
+                                <li>Adapted the Mediapipe and OpenCV library to track and support 4 human gestures.</li>
+                                <li>Control universal robot arm and gripper using Human Gesture.</li>
+                                <li>Socket-based communication between a client and server over the network</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Solve 8 puzzle and maze with AI</h3>
+                    <p>October 2022</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email : <a href="mailto:tanut.brvsr@gmail.com">tanut.brvsr@gmail.com</a></p>
+                <p>Tel : 0845999196</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Tanut Bumrungvongsiri. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
