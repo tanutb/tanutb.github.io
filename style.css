@@ -188,7 +188,8 @@ section h2 {
 
 .project:hover {
     /* background: #f0f0f0; Change background color on hover */
-    box-shadow: 0 0 20px hwb(0 0% 100% / 0.502); /* Change box-shadow on hover */
+    box-shadow: 0 0 20px rgba(0, 76, 255, 0.502); /* Change box-shadow on hover */
+    
 }
 
 .project h3 {
@@ -297,25 +298,122 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+
+    .image_name {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        justify-content: center;
+        margin: 0 auto; /* Center the div horizontally */
+    }
+
+    .image_name h1{
+        font-size: 1.1 em;
+    }
+
+    .image_name .text_area{
+        font-size: 1.1 em;
+        text-align: center;
+    }
+
+    .image_name .image_name_normally h1 {
+        font-size: 2.0em;
+        text-align: center;
+    }
+
+    .button_frame {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image_name img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        border-radius: 50%; /* Make the image circular */
+    }
+
     .container {
-        width: 90%;
-        padding: 30px;
+        width: 100%;
+        padding: 20px;
+        box-shadow: none;
     }
 
-    header h1 {
-        font-size: 2em;
+    .text_row{
+        flex-direction: column;
+        
+    }    
+
+    .text_row nav{
+        display: flex;
+        width: auto;
+        justify-content: center;
     }
 
-    nav ul li {
-        margin: 0 10px;
+    .image_name {
+        flex-direction: column;
     }
 
-    section h2 {
-        font-size: 1.3em;
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-content img{
+        justify-content: center;
+    }
+
+    .project img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+        
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 5%;
     }
 
     .project h3 {
         font-size: 1.2em;
+        
+    }
+
+    .showcase img {
+        display: block;
+        margin: 1rem 2rem;
+        width: auto;
+        max-width: 80%;
+        height: auto;
+    }
+
+    .showcase {
+        flex-direction: column;
+        padding: 5%;
+        font-size: 1.0em;
+    }
+
+    .showcase h3 {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 }
 
