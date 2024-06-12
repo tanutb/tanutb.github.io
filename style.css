@@ -156,7 +156,6 @@ section h2 {
     border-bottom: 2px solid hsl(229, 100%, 60%);
     display: inline-block;
     padding-bottom: 5px;
-    font-size: 1.6em;
 }
 .showcase {
     margin-bottom: 1.5rem;
@@ -296,19 +295,15 @@ footer {
     }
 
     .container .text_row nav{
-        font-size: 1.5 em;
+        font-size: 1.0em;
     }
 
     .container .text_row h2{
-        font-size: 1.8 em;
+        font-size: 1.5em;
     }
 
-    section h2
-    {
-        font-size: 1.8 em;
-    }
     .project-text{
-        font-size: 1.8 em;
+        font-size: 1.4em;
     }
 
     .image_name_normally{
@@ -316,7 +311,7 @@ footer {
     }
 
     .image_name .text_area{
-        font-size: 1.1 em;
+        font-size: 1.1em;
         text-align: center;
     }
 
@@ -407,7 +402,6 @@ footer {
     .showcase {
         flex-direction: column;
         padding: 5%;
-        font-size: 1.3em;
     }
 
 
@@ -429,7 +423,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8 em;
+        font-size: 1.6em;
     }
 
     .button_with_liner{
@@ -460,17 +454,13 @@ footer {
          /* Center the div horizontally */
     }
 
-    .image_name h1{
-        font-size: 1.1 em;
-    }
 
     .image_name .text_area{
-        font-size: 1.1 em;
         text-align: center;
     }
 
     .image_name .image_name_normally h1 {
-        font-size: 2.0em;
+        font-size: 1.5em;
         text-align: center;
     }
 
@@ -550,9 +540,6 @@ footer {
         font-size: 1.0em;
     }
 
-    .showcase h3 {
-        font-size: 1.2em;
-    }
 
     nav ul {
         text-align: center;
@@ -574,15 +561,11 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8 em;
+        font-size: 1.8em;
     }
 
     .project h3 {
-        font-size: 1.5 em;
-    }
-
-    .showcase h3 {
-        font-size: 1.5 em;
+        font-size: 1.5em;
     }
 
 
