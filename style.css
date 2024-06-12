@@ -286,21 +286,29 @@ footer {
     }
 
     .container .text_row nav{
-        font-size: 2.3 em;
+        font-size: 1.5 em;
     }
 
     .container .text_row h2{
-        font-size: 2.5 em;
+        font-size: 1.8 em;
     }
 
     section h2
     {
-        font-size: 2.3 em;
+        font-size: 1.8 em;
     }
     .project-text{
-        font-size: 2.3 em;
+        font-size: 1.8 em;
     }
 
+    .image_name_normally{
+        text-align: center;
+    }
+
+    .image_name .text_area{
+        font-size: 1.1 em;
+        text-align: center;
+    }
 
     .image_name {
         display: flex;
@@ -316,6 +324,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         font-size: 2.1 em;
+        margin: 0 auto;
     }
 
     .button_frame a{
@@ -409,13 +418,25 @@ footer {
         padding: 20px;
     }
 
+    .button_frame {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;  
+    }
+    
+    .button_frame a{
+        margin-right:20px;
+        justify-content: center;
+    }
+
     .image_name {
         display: flex;
         flex-direction: row;
         align-items: center;
         width: auto;
         justify-content: center;
-        margin: 0 auto; /* Center the div horizontally */
+         /* Center the div horizontally */
     }
 
     .image_name h1{
@@ -525,7 +546,7 @@ footer {
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.8em;
+        font-size: 2.0em;
     }
 
     .image_name_normally {
@@ -533,15 +554,15 @@ footer {
     }
 
     section h2 {
-        font-size: 1.2em;
+        font-size: 1.8 em;
     }
 
     .project h3 {
-        font-size: 1.1em;
+        font-size: 1.5 em;
     }
 
     .showcase h3 {
-        font-size: 1.1em;
+        font-size: 1.5 em;
     }
 
 
