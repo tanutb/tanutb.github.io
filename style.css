@@ -134,6 +134,8 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+
+    font-size: 1.2em;
 }
 
 nav ul li a:hover {
@@ -154,6 +156,7 @@ section h2 {
     border-bottom: 2px solid hsl(229, 100%, 60%);
     display: inline-block;
     padding-bottom: 5px;
+    font-size: 1.6em;
 }
 .showcase {
     margin-bottom: 1.5rem;
@@ -283,6 +286,13 @@ footer {
         flex-direction: column;
         justify-content: flex-start;
         padding: 20px;
+    }
+
+    .button_with_liner{
+        margin: 20px 20px 0px 20px;
+    }
+    .button_with_liner_nobg{
+        margin: 20px 20px 0px 20px;
     }
 
     .container .text_row nav{
@@ -418,6 +428,13 @@ footer {
         padding: 20px;
     }
 
+    .button_with_liner{
+        margin: 20px 20px 0px 20px;
+    }
+    .button_with_liner_nobg{
+        margin: 20px 20px 0px 20px;
+    }
+
     .button_frame {
         display: flex;
         flex-direction: row;
@@ -456,7 +473,6 @@ footer {
     .button_frame {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .image_name img {
