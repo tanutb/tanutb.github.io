@@ -286,19 +286,19 @@ footer {
     }
 
     .container .text_row nav{
-        font-size: 1.3 em;
+        font-size: 2.3 em;
     }
 
     .container .text_row h2{
-        font-size: 1.5 em;
+        font-size: 2.5 em;
     }
 
     section h2
     {
-        font-size: 1.3 em;
+        font-size: 2.3 em;
     }
     .project-text{
-        font-size: 1.3 em;
+        font-size: 2.3 em;
     }
 
 
@@ -315,7 +315,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 1.1 em;
+        font-size: 2.1 em;
     }
 
     .button_frame a{
