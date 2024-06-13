@@ -23,6 +23,7 @@ body {
 .text_row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .text_column{
@@ -187,6 +188,7 @@ section h2 {
 .showcase.project:hover {
     /* background: #f0f0f0; Change background color on hover */
     box-shadow: 0 0 20px rgba(0, 76, 255, 0.502); /* Change box-shadow on hover */
+    transform: translateY(-0.5%);
     
 }
 
