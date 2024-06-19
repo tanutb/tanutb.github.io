@@ -1,7 +1,8 @@
 /* Reset some default styles */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-html {
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+*, html {
+
+    scroll-behavior: smooth !important;
 }
 
 * {
@@ -323,7 +324,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .project-text{
@@ -462,7 +463,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .button_with_liner{
@@ -600,7 +601,7 @@ footer {
     }
 
     section h2 {
-        font-size: 1.8em;
+        font-size: 1.3em;
     }
 
     .project h3 {

@@ -13,7 +13,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    mar = height - (height / 2) 
+    mar = height / 8
     if (document.body.scrollTop >  mar || document.documentElement.scrollTop > mar) {
         backToTopButton.style.display = "block";
     } else {
