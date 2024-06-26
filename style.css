@@ -68,6 +68,7 @@ body {
 }
 .text_row h2{
     margin-top: 3px;
+    color: hsl(229, 65%, 50%);
 }
 
 .container {
