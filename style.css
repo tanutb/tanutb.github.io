@@ -193,14 +193,13 @@ section h2 {
 .showcase {
     margin-bottom: 1.5rem;
     background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    border-radius: 20px; /* Round the corners of the project container */
+    border-radius: 10px; /* Round the corners of the project container */
     justify-content: center;
     padding: 2%;
     
 }
-
 .showcase img {
     display: block;
     margin: 1rem 2rem;
@@ -214,6 +213,17 @@ section h2 {
     font-size: 1.2em;
     margin-bottom: 0.7rem;
     
+}
+
+.showcase.project {
+    /* background: #f0f0f0; Change background color on hover */
+    margin-bottom: 1.5rem;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    border-radius: 20px; /* Round the corners of the project container */
+    justify-content: center;
+    padding: 2%;
 }
 
 .showcase.project:hover {
