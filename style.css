@@ -13,12 +13,12 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #dcdcdc;
+    background: #f5f5f5;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    color: #333;
+    color: #4a4a4a;
 }
 .project-text{
     font-size: 1.4 em;
@@ -26,24 +26,25 @@ body {
 
 
 #backToTop {
-    display: none; /*Hidden by default*/
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 99; /* Make sure it is above other elements */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #555; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #6b7280;
+    color: white;
+    cursor: pointer;
     padding: 15px 20px 15px 20px;
-    border-radius: 50%; /* Rounded corners */
+    border-radius: 50%;
     font-size: 24px;
-    transition: background-color 0.3s; /* Smooth background-color transition */
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #backToTop:hover {
-    background-color: #333; /* Darker background on hover */
+    background-color: #4b5563;
 }
 
 .text_row{
@@ -68,7 +69,7 @@ body {
 }
 .text_row h2{
     margin-top: 3px;
-    color: hsl(229, 65%, 50%);
+    color: #6b7280;
 }
 
 .container {
@@ -76,8 +77,8 @@ body {
     max-width: 1400px; /* A4 width */
     height: auto;
     background: white;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
     padding: 10px 30px 30px 30px;
     display: flex;
     flex-direction: column;
@@ -85,10 +86,10 @@ body {
 }
 
 .text_area {
-    margin-top: 10px ;
+    margin-top: 10px;
     width: auto;
     line-height: 1.7;
-    color: hsl(237, 10%, 57%)
+    color: #6b7280;
 }
 
 .image_name_normally {
@@ -100,7 +101,7 @@ body {
 
 .image_name_normally h1{
     font-size: 2.3em;
-    color: #2D1863;
+    color: #1f2937;
 }
 
 .button_frame {
@@ -159,21 +160,19 @@ nav ul li {
 }
 
 nav ul li a {
-    color: hsl(237, 10%, 57%);
+    color: #6b7280;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.6s ease;
-
+    font-weight: 500;
+    transition: color 0.3s ease;
     font-size: 1.2em;
 }
 
 nav ul li a:active  {
-    transition: transform 0.3s ease; /* Define transition for box-shadow and transform */
+    transition: transform 0.3s ease;
 }
 
-
 nav ul li a:hover {
-    color: hsl(229, 100%, 60%);
+    color: #374151;
 }
 
 main {
@@ -187,19 +186,20 @@ section {
 section h2 {
     margin-bottom: 1rem;
     font-size: 1.8em;
-    border-bottom: 2px solid hsl(229, 100%, 60%);
+    border-bottom: 2px solid #e5e7eb;
     display: inline-block;
     padding-bottom: 5px;
+    color: #1f2937;
 }
 .showcase {
     margin-bottom: 1.5rem;
-    background: white;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-    transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    border-radius: 20px; /* Round the corners of the project container */
+    background: #fafafa;
+    box-shadow: none;
+    border: 1px solid #f0f0f0;
+    transition: background 0.3s, box-shadow 0.3s;
+    border-radius: 12px;
     justify-content: center;
     padding: 2%;
-    
 }
 .showcase img {
     display: block;
@@ -217,16 +217,16 @@ section h2 {
 }
 
 .showcase.project {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.6s, box-shadow 0.3s; /* Smooth transition for hover effect */
-    border-radius: 20px; /* Round the corners of the project container */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
 }
 
 .showcase.project:hover {
-    /* background: #f0f0f0; Change background color on hover */
-    box-shadow: 0 0 20px rgba(0, 76, 255, 0.502); /* Change box-shadow on hover */
-    transform: translateY(-2%);
-    transition: color 0.3s ease ,transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+    border-color: #e5e7eb;
 }
 
 .showcase.project:hover h3 {
@@ -247,79 +247,209 @@ section h2 {
 
 .project-description {
     margin-top: 0.5rem;
-    padding-left: 1.5rem; /* Add padding to align bullet points */
-    list-style-type: disc; /* Ensure bullet points are shown */
-    color: hwb(240 42% 53%);
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    color: #6b7280;
 }
 
 .project-description li {
-    margin-bottom: 0.5rem; /* Space between bullet points */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
 }
 
 .button_with_liner {
-    background-color: hsl(222, 9%, 21%); 
+    background-color: #374151;
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 12px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .button_with_liner:hover {
-    background-color: hwb(0 0% 100%);
-    color: #fff;
+    background-color: #1f2937;
 }
 
 .button_with_liner_nobg {
-    color: #333; /* Text color */
-    padding: 10px 20px; /* Padding inside the button */
-    margin-top: 20px; /* Margin on top of the button */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline from the text */
-    font-weight: bold; /* Make the text bold */
-    border-radius: 12px; /* Rounded corners */
-    border: 1px solid hsl(240, 1%, 38%); /* Border around the button */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color changes */
+    color: #4a4a4a;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .button_with_liner_nobg:hover {
-    background-color: #333; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+    background-color: #f9fafb;
+    border-color: #d1d5db;
 }
 
 
 
 .button {
-    color: #333;
+    color: #4a4a4a;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .button:hover {
-    color: hsl(229, 100%, 60%);
+    color: #1f2937;
 }
 
 footer {
     background: transparent;
-    color: #333;
+    color: #9ca3af;
     text-align: center;
     padding: 1rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #f0f0f0;
 }
 
 #contact a {
-    color: hsl(229, 100%, 60%);
+    color: #6b7280;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #333;
+    color: #1f2937;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+    margin: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #e5e7eb;
+    top: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.timeline-content {
+    width: 45%;
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #e5e7eb;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: #9ca3af;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #e5e7eb;
+    z-index: 10;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    background: #f3f4f6;
+    color: #4b5563;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 1px solid #e5e7eb;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 1rem;
+    object-fit: contain;
+}
+
+.company-info h3 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.company-info .job-title {
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 1.05em;
+    margin: 0.3rem 0;
+}
+
+.company-info .location {
+    color: #9ca3af;
+    font-size: 0.9em;
+}
+
+.experience-details {
+    margin-top: 1rem;
+}
+
+.experience-details h4 {
+    color: #374151;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.experience-details ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.experience-details li {
+    margin-bottom: 0.5rem;
+    color: #6b7280;
+    line-height: 1.6;
 }
 
 @media (max-width: 1024px) {
@@ -458,6 +588,30 @@ footer {
     nav ul li {
         display: block;
         margin: 10px 0;
+    }
+
+    /* Timeline responsive */
+    .timeline::before {
+        left: 30px;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        padding-left: 60px;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    .timeline-marker {
+        left: 30px;
+    }
+
+    .timeline-date {
+        left: 30px;
+        transform: none;
+        top: -35px;
     }
 }
 
