@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CV — Tanut Bumrungvongsiri</title>
+<link href="https://cdn.jsdelivr.net/gh/bitmaks/cm-web-fonts@latest/fonts.css" rel="stylesheet">
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+        font-family: 'Computer Modern Serif', 'CMU Serif', 'Latin Modern Roman', Georgia, 'Times New Roman', serif;
+        color: #000000;
+        font-size: 10pt;
+        line-height: 1.35;
+        background: #ffffff;
+    }
+
+    a { color: #000000; text-decoration: none; }
+
+    /* ===== Header (centered, LaTeX style) ===== */
+
+    .cv-header {
+        text-align: center;
+        margin-bottom: 4pt;
+    }
+
+    .cv-header h1 {
+        font-size: 22pt;
+        font-weight: 700;
+        letter-spacing: 0.5pt;
+        line-height: 1.15;
+    }
+
+    .contact-line {
+        margin-top: 4pt;
+        font-size: 9.2pt;
+    }
+
+    .contact-line .sep {
+        margin: 0 4pt;
+    }
+
+    .contact-line a {
+        text-decoration: underline;
+        text-underline-offset: 1.5pt;
+    }
+
+    /* ===== Sections ===== */
+
+    section { margin-top: 11pt; }
+
+    h2 {
+        font-size: 11.5pt;
+        font-weight: 400;
+        font-variant: small-caps;
+        letter-spacing: 0.5pt;
+        border-bottom: 0.7pt solid #000000;
+        padding-bottom: 1.5pt;
+        margin-bottom: 6pt;
+    }
+
+    /* ===== Entries ===== */
+
+    .entry { margin-bottom: 8pt; break-inside: avoid; }
+    .entry:last-child { margin-bottom: 0; }
+
+    .entry-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16pt;
+    }
+
+    .entry-row .title {
+        font-size: 10.4pt;
+        font-weight: 700;
+    }
+
+    .entry-row .date {
+        font-size: 9.6pt;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .entry-row.sub {
+        margin-top: 0.5pt;
+    }
+
+    .entry-row.sub .org,
+    .entry-row.sub .loc {
+        font-style: italic;
+        font-size: 9.6pt;
+        font-weight: 400;
+    }
+
+    .subproject {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 9.8pt;
+        margin-top: 4pt;
+    }
+
+    ul {
+        padding-left: 16pt;
+        margin-top: 2.5pt;
+    }
+
+    li {
+        font-size: 9.8pt;
+        line-height: 1.35;
+        margin-bottom: 1.5pt;
+    }
+
+    .summary-text {
+        font-size: 9.9pt;
+        line-height: 1.4;
+        text-align: justify;
+    }
+
+    /* ===== Skills (label: values lines) ===== */
+
+    .skills-list { list-style: none; padding-left: 0; margin-top: 3pt; }
+
+    .skills-list li {
+        margin-bottom: 2.5pt;
+        font-size: 9.8pt;
+    }
+
+    .skills-list b { font-weight: 700; }
+
+    /* ===== Compact one-line items ===== */
+
+    .oneline { margin-bottom: 3pt; }
+
+    .oneline .entry-row .title { font-weight: 400; }
+</style>
+</head>
+<body>
+
+    <header class="cv-header">
+        <h1>Tanut Bumrungvongsiri</h1>
+        <p class="contact-line">
+            084-599-9196 <span class="sep">|</span>
+            <a href="mailto:tanut.brvsr@gmail.com">tanut.brvsr@gmail.com</a> <span class="sep">|</span>
+            <a href="https://www.linkedin.com/in/tanut-bumrungvongsiri-676428261/">LinkedIn</a> <span class="sep">|</span>
+            <a href="https://github.com/tanutb">github.com/tanutb</a> <span class="sep">|</span>
+            <a href="https://tanutb.github.io">tanutb.github.io</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <p class="summary-text">
+            Artificial Intelligence engineer with 2+ years of hands-on experience designing, fine-tuning, and
+            deploying AI solutions that automate complex workflows and improve productivity. Strong expertise
+            in applying state-of-the-art models to real-world scenarios, with a focus on data characteristics,
+            system constraints, and business requirements.
+        </p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">King Mongkut's University of Technology Thonburi</span>
+                <span class="date">July 2020 &ndash; May 2024</span>
+            </div>
+            <div class="entry-row sub">
+                <span class="org">Bachelor's in Robotics and Automation Engineering, Institute of Field Robotics</span>
+                <span class="loc">Bangkok, Thailand</span>
+            </div>
+            <ul>
+                <li>GPAX: 3.74 / 4.00 (First-Class Honors)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">AI/ML Engineer</span>
+                <span class="date">July 2024 &ndash; Present</span>
+            </div>
+            <div class="entry-row sub">
+                <span class="org">Vulcorn AI &middot; Full-time</span>
+                <span class="loc">Bangkok, Thailand</span>
+            </div>
+            <p class="subproject">Digitalization for 2D Technical Engineering Drawings</p>
+            <ul>
+                <li>Designed and implemented an end-to-end pipeline for extracting textual and semantic information from 2D technical engineering drawings.</li>
+                <li>Applied fine-tuned transformer-based OCR models to achieve high-accuracy text detection and recognition across complex drawing layouts.</li>
+                <li>Leveraged fine-tuned Vision-Language Models (VLMs) to semantically understand and extract key metadata from 2D technical engineering drawings.</li>
+            </ul>
+            <p class="subproject">Digital Rebranding and Standardization for 2D Technical Drawings</p>
+            <ul>
+                <li>Implemented an automated pipeline to mask sensitive title block metadata in 2D engineering drawings and replace it with standardized, company-branded layouts.</li>
+                <li>Utilized AI-based OCR and vision models to extract essential metadata while ensuring sensitive and proprietary information is protected.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">AI/ML Engineer &amp; Software Developer</span>
+                <span class="date">June 2023 &ndash; November 2023</span>
+            </div>
+            <div class="entry-row sub">
+                <span class="org">The Bangkok Unitrade Co., Ltd. &middot; 6-month Internship</span>
+                <span class="loc">Bangkok, Thailand</span>
+            </div>
+            <ul>
+                <li>Designed and adapted object detection for surgical instruments moving along a conveyor belt for classification, employing YOLOv8.</li>
+                <li>Conducted research and applied a multi-view classification model utilizing data from three camera perspectives to fine-grained classify surgical instruments, achieving 99.4% accuracy on 44 surgical instrument classes.</li>
+                <li>Developed a software application with a PyQt5 graphical user interface (GUI) integrating AI-powered object detection and classification.</li>
+                <li>Implemented logging functionality to record predictions in a MySQL database.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <ul class="skills-list">
+            <li><b>Programming Languages:</b> Python (Advanced); C, C++ (Intermediate)</li>
+            <li><b>Frameworks:</b> PyTorch, TensorFlow, Keras, OpenCV, Transformers (Hugging Face), Ultralytics, scikit-learn</li>
+            <li><b>Backend &amp; Deployment:</b> FastAPI, Docker, Linux</li>
+            <li><b>Applied AI &amp; ML:</b> Model fine-tuning (including VLM-LoRA), OCR pipelines, computer vision systems, image detection and classification, end-to-end model deployment</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Vehicle Tracking using YOLOv8 + SORT</span>
+                <span class="date">June 2024</span>
+            </div>
+            <ul>
+                <li>Leveraged YOLOv8 for vehicle detection and implemented tracking with SORT and Kalman filters for accurate estimation and tracking.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Deep Learning-based Navigation for Mobile Robots in Dynamic Environments</span>
+                <span class="date">May 2024</span>
+            </div>
+            <ul>
+                <li>Adapted TD3 and SAC deep reinforcement learning algorithms for mobile robot navigation in dynamic environments with moving obstacles in Gazebo simulation.</li>
+                <li>Grouped LiDAR clusters and tracked obstacles in each frame using the Hungarian Algorithm and Kalman Filter.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Solving Tic-Tac-Toe with Reinforcement Learning</span>
+                <span class="date">April 2024</span>
+            </div>
+            <ul>
+                <li>Trained an agent to play Tic-Tac-Toe using Q-Learning, SARSA, and Double Q-Learning, and compared the performance of the three algorithms.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Image Classification of Surgical Instruments</span>
+                <span class="date">March 2023</span>
+            </div>
+            <ul>
+                <li>Compared performance of fine-tuned ResNet-50 and VGG-16 models pre-trained on ImageNet, using data augmentation.</li>
+                <li>Integrated the Attention Network mechanism with SEResNet50, enhancing the model's capability to focus on relevant features.</li>
+                <li>Adapted fine-grained classification techniques (Bilinear Pooling, WSDAN) from research papers, achieving 98.5% accuracy on 4 surgical instrument classes.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Telemanipulation of Robot Hand using Human Gesture</span>
+                <span class="date">November 2022</span>
+            </div>
+            <ul>
+                <li>Adapted MediaPipe and OpenCV to track 4 human gestures for controlling a universal robot arm and gripper.</li>
+                <li>Implemented socket-based client&ndash;server communication to enable telemanipulation over the network.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-row">
+                <span class="title">Solving the 8-Puzzle and Mazes with AI</span>
+                <span class="date">October 2022</span>
+            </div>
+            <ul>
+                <li>Developed Pygame software utilizing the A* algorithm to solve the 8-puzzle with the minimum number of moves, and adapted A* search to maze pathfinding problems.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publication</h2>
+        <div class="entry oneline">
+            <div class="entry-row">
+                <span class="title"><i>Automated Bounding Dimension Retrieval: A Machine Learning-Driven Framework for Engineering Drawing Interpretation</i> &mdash; ICCI 2025 (Co-author)</span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certification</h2>
+        <div class="entry oneline">
+            <div class="entry-row">
+                <span class="title">Deep Learning for Image Classification &mdash; learn.thairobotics</span>
+                <span class="date">June 2024</span>
+            </div>
+        </div>
+        <div class="entry oneline">
+            <div class="entry-row">
+                <span class="title">You Only Look Once (YOLO): Unified, Real-Time Object Detection &mdash; learn.thairobotics</span>
+                <span class="date">June 2024</span>
+            </div>
+        </div>
+        <div class="entry oneline">
+            <div class="entry-row">
+                <span class="title">Image Processing &mdash; learn.thairobotics</span>
+                <span class="date">November 2022</span>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
