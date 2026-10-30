@@ -1,35 +1,47 @@
-// Back to top button
-const backToTopButton = document.getElementById("backToTop");
+const supportsObserver = "IntersectionObserver" in window;
 
-window.addEventListener("scroll", () => {
-    backToTopButton.classList.toggle("visible", window.scrollY > 600);
-}, { passive: true });
+// Header: show its bottom rule once the page leaves the very top
+const header = document.querySelector(".site-header");
+const topSentinel = document.querySelector(".top-sentinel");
 
-backToTopButton.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// Subtle reveal-on-scroll (skipped if the user prefers reduced motion)
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (!prefersReducedMotion && "IntersectionObserver" in window) {
-    const targets = document.querySelectorAll(
-        ".skill-card, .edu-card, .timeline-item, .project-card, .cert-card, .contact-chip"
-    );
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("in-view");
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { rootMargin: "0px 0px 12% 0px", threshold: 0.05 });
-
-    targets.forEach((el) => {
-        el.classList.add("reveal");
-        observer.observe(el);
+// Progressive enhancement: navigation remains visible without JavaScript.
+const navToggle = document.querySelector(".nav-toggle");
+const navigation = document.querySelector("#main-navigation");
+if (header && navToggle && navigation) {
+    const closeNavigation = () => {
+        header.classList.remove("nav-open");
+        navToggle.setAttribute("aria-expanded", "false");
+    };
+    navToggle.hidden = false;
+    header.classList.add("nav-ready");
+    navToggle.addEventListener("click", () => {
+        const open = header.classList.toggle("nav-open");
+        navToggle.setAttribute("aria-expanded", String(open));
     });
+    navigation.addEventListener("click", (event) => {
+        const link = event.target.closest("a[href^='#']");
+        if (!link || !header.classList.contains("nav-open")) return;
+        closeNavigation();
+        const target = document.querySelector(link.getAttribute("href"));
+        if (target) {
+            target.setAttribute("tabindex", "-1");
+            target.focus({ preventScroll: true });
+        }
+    });
+    header.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && header.classList.contains("nav-open")) {
+            closeNavigation();
+            navToggle.focus();
+        }
+    });
+    window.matchMedia("(max-width: 720px)").addEventListener("change", closeNavigation);
+}
+
+if (supportsObserver && header && topSentinel) {
+    const topWatcher = new IntersectionObserver(([entry]) => {
+        header.classList.toggle("scrolled", !entry.isIntersecting);
+    });
+    topWatcher.observe(topSentinel);
 }
 
 // Scrollspy: highlight the nav link for the section currently in view
@@ -38,15 +50,15 @@ const spiedSections = Array.from(navLinks)
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
-if ("IntersectionObserver" in window && spiedSections.length) {
+if (supportsObserver && spiedSections.length) {
     const spy = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 navLinks.forEach((link) => {
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") === "#" + entry.target.id
-                    );
+                    const active = link.getAttribute("href") === "#" + entry.target.id;
+                    link.classList.toggle("active", active);
+                    if (active) link.setAttribute("aria-current", "location");
+                    else link.removeAttribute("aria-current");
                 });
             }
         });
